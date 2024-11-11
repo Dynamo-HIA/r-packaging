@@ -23,15 +23,32 @@ format:
       eval: true
       warning: false
     title-slide-attributes:
-      # data-logo: ""
-      # data-footer: ""
+      # data-background-type: title
+      #   # data-logo: ""
+      #   # data-footer: ""
       data-background-image: escience_background_title.png
       data-background-size: contain
+      data-background-position: center
+
 ---
 
 ```{r setup, eval=TRUE, echo=FALSE}
 library(testthat)
 ```
+
+## Links
+
+::: {.columns}
+::: {.column width="50%"}
+Link to presentation:
+![](qr_link.png)
+:::
+::: {.column width="50%"}
+Link to GitLab package template:
+![](qr_gitlab.png)
+:::
+:::
+
 
 ## Why R packaging
 
@@ -210,7 +227,7 @@ create_model <- function(df, dependent, predictors) {
 :::
 
 ::: {.fragment .fade-in data-fragment-index="5"}
-To test the function, run `devtools::load_all()` (or Ctrl+Shift+L) and then `create_model(df, "income", c("age", "sex"))`
+To try out the function, run `devtools::load_all()` (or Ctrl+Shift+L) and then `create_model(df, "income", c("age", "sex"))`
 :::
 :::
 :::
@@ -656,7 +673,7 @@ Advantages of automated testing with `testthat`:<br>
 - Fewer (undetected) bugs
 - Forces better code structure
 - Easy to apply changes to code
-- More trustworthiness in code
+- More trustworthy code
 
 :::
 

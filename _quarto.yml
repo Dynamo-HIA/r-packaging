@@ -1,5 +1,5 @@
 project:
-  title: "rivm-r-packaging"
+  title: "rivm_r_packaging"
   type: website
   output-dir: docs
 
